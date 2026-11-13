@@ -1,0 +1,11 @@
+{
+  "name": "karpathy-workflow",
+  "description": "Code the way Andrej Karpathy works with Claude Code: short plain-English prompts, the agent owns the build-run-verify loop, and every explanation comes back as a technical-drawing explainer sheet (PNG) with diagrams and charts.",
+  "version": "1.0.0",
+  "author": { "name": "Anishpras" },
+  "homepage": "https://github.com/Anishpras/karpathy-coding-skill",
+  "repository": "https://github.com/Anishpras/karpathy-coding-skill",
+  "license": "MIT",
+  "keywords": ["karpathy", "workflow", "coding", "explainer", "diagrams", "charts", "ste100"],
+  "skills": ["./karpathy-workflow"]
+}

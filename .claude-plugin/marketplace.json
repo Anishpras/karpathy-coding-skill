@@ -1,0 +1,19 @@
+{
+  "name": "karpathy-coding-skill",
+  "owner": { "name": "Anishpras" },
+  "metadata": {
+    "description": "Andrej Karpathy's Claude Code workflow as a skill, with technical-drawing explainer sheets.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "karpathy-workflow",
+      "source": "./",
+      "description": "Short prompts in, verified work out, and every explanation drawn as a technical-drawing explainer sheet.",
+      "version": "1.0.0",
+      "author": { "name": "Anishpras" },
+      "keywords": ["karpathy", "workflow", "coding", "explainer", "diagrams"],
+      "category": "workflow"
+    }
+  ]
+}

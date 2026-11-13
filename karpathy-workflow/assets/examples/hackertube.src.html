@@ -1,0 +1,66 @@
+<main class="sheet" data-name="How HackerTube was built">
+
+  <section class="panel" style="--span:12" data-title="Pipeline: from 20 years of comments to a video site" data-cap="cheap filters first, then a model">
+    <div class="flow">
+      <div class="step">HN comment archive<small>Public dataset, about 20 years</small><span class="n">~43M comments</span></div>
+      <div class="step">Code filter<small>Has a YouTube link and 100+ characters of the commenter's own text</small></div>
+      <div class="step">Count filter<small>Video named by 3+ people in 3+ different months; at most 20 mentions kept</small></div>
+      <div class="step hl">Sonnet labels each mention<small>recommendation, strong recommendation, neutral, joke, criticism</small><span class="n">~40K recommend</span></div>
+      <div class="step">Score<small>months with a recommendation + ½ × months with a strong one</small></div>
+      <div class="step">Site<small>YouTube-style pages, no accounts</small><span class="n">6,454 videos</span></div>
+    </div>
+    <p class="note">The labels are made by a model and were not checked by a person.</p>
+  </section>
+
+  <section class="panel" style="--span:4" data-title="The result" data-cap="numbers from the post">
+    <div class="stats">
+      <div class="stat"><b>6,454</b><span>videos</span><small>2007 to 2026</small></div>
+      <div class="stat"><b>~150</b><span>topics</span><small>made by Sonnet</small></div>
+      <div class="stat"><b>~2 h</b><span>to build</span><small>one Saturday morning</small></div>
+    </div>
+  </section>
+
+  <section class="panel" style="--span:4" data-title="Token use" data-cap="millions of tokens">
+    <div class="hbar" data-suffix="M">
+      <div data-label="Input" data-value="504"></div>
+      <div data-label="Input that was cached" data-value="454" data-tone="muted"></div>
+      <div data-label="Output" data-value="7.6"></div>
+      <div data-label="Opus: app and deploy" data-value="1"></div>
+    </div>
+    <p class="note">Over 90% went to the Sonnet labeling. All on a subscription, so no dollar cost.</p>
+  </section>
+
+  <section class="panel" style="--span:4" data-title="Who did what" data-cap="from the post's edit">
+    <table class="spec">
+      <tr><th>Step</th><th>Done by</th></tr>
+      <tr><td>Create a YouTube API key</td><td>Karpathy</td></tr>
+      <tr><td>Set up the VPS, buy the domain, add DNS</td><td>Karpathy</td></tr>
+      <tr><td>Download, filter, label, score</td><td class="blue">Claude</td></tr>
+      <tr><td>Build the site</td><td class="blue">Claude</td></tr>
+      <tr><td>Update, deploy, secure, harden, optimize</td><td class="blue">Claude</td></tr>
+    </table>
+  </section>
+
+  <section class="panel" style="--span:8" data-title="Which labels count" data-cap="score inputs">
+    <table class="spec">
+      <tr><th>Label</th><th>Example of the comment</th><th>Counts toward score</th></tr>
+      <tr><td class="m">strong recommendation</td><td>"Everyone should watch this talk."</td><td><span class="ok">Yes, extra ½</span></td></tr>
+      <tr><td class="m">recommendation</td><td>"This video explains it well."</td><td><span class="ok">Yes</span></td></tr>
+      <tr><td class="m">neutral reference</td><td>"There's a video about this somewhere."</td><td><span class="no">No</span></td></tr>
+      <tr><td class="m">joke</td><td>"Obligatory link."</td><td><span class="no">No</span></td></tr>
+      <tr><td class="m">criticism</td><td>"That video gets the facts wrong."</td><td><span class="no">No</span></td></tr>
+    </table>
+    <p class="note">Example comments are illustrations, not quotes from the data.</p>
+  </section>
+
+  <div class="stack" style="--span:4">
+    <div class="titleblock">
+      <div class="wide"><label>Title</label><span>How HackerTube was built</span></div>
+      <div><label>Built with</label><span>Claude Code, Opus 5.5 (medium)</span></div>
+      <div><label>Labeling</label><span>Sonnet 5.5 subagents</span></div>
+      <div><label>Source</label><span>karpathy.bearblog.dev/hacker-tube</span></div>
+      <div><label>Sheet</label><span>1 of 1</span></div>
+    </div>
+  </div>
+
+</main>

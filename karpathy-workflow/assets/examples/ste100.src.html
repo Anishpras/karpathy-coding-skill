@@ -1,0 +1,128 @@
+<main class="sheet" data-name="Simplified Technical English: overview">
+
+  <section class="panel" style="--span:4" data-title="Document structure" data-cap="ASD-STE100 specification">
+    <div class="tree">
+      <div class="node root">ASD-STE100<small>Simplified Technical English</small></div>
+      <div class="branches">
+        <div class="branch">
+          <div class="node">Part 1: Writing rules</div>
+          <ul class="leaves">
+            <li><code>Section 1</code>Words</li>
+            <li><code>Section 2</code>Noun clusters</li>
+            <li><code>Section 3</code>Verbs</li>
+            <li><code>Section 4</code>Sentences</li>
+            <li><code>Section 5</code>Procedures</li>
+            <li><code>Section 6</code>Descriptive writing</li>
+            <li><code>Section 7</code>Safety instructions</li>
+            <li><code>Section 8</code>Punctuation and word counts</li>
+            <li><code>Section 9</code>Writing practices</li>
+          </ul>
+        </div>
+        <div class="branch">
+          <div class="node">Part 2: Dictionary</div>
+          <ul class="leaves">
+            <li>Approved words<small>Keyword in UPPERCASE, one meaning</small></li>
+            <li>Unapproved words<small>lowercase, with approved alternative</small></li>
+            <li>Technical names<small>company terms, defined categories</small></li>
+            <li>Technical verbs<small>company verbs, defined categories</small></li>
+          </ul>
+          <div class="box">About 900 approved words<small>Each word: one part of speech, one meaning</small></div>
+        </div>
+      </div>
+    </div>
+    <p class="note">Rules are numbered by section, for example Rule 5.1 belongs to Section 5, Procedures.</p>
+  </section>
+
+  <section class="panel" style="--span:5" data-title="Anatomy of STE sentences" data-cap="annotated examples">
+    <div>
+      <p class="cap">Original text, not STE: unapproved words in red</p>
+      <p class="p" style="color:var(--ink)">It is <span class="red">imperative</span> that the operator <span class="red">ensures</span> the hydraulic reservoir is <span class="red">replenished prior to commencing</span> operation.</p>
+    </div>
+
+    <p class="sub">1 Procedural sentence (the same instruction, rewritten)</p>
+    <div class="annot-wrap">
+      <div class="dim">13 words, limit 20</div>
+      <div class="annot two"><span class="m l">Make sure<i>Approved verb, command form</i></span> that the <span class="m r2">hydraulic reservoir<i>Technical name, 2-word noun cluster (max 3)</i></span> is <span class="m">full<i>Not "replenished"</i></span> <span class="m r2">before<i>Not "prior to"</i></span> <span class="m">you start<i>Active voice</i></span> the <span class="m r2 rt">operation<i>Not "commencing"</i></span>.</div>
+    </div>
+
+    <p class="sub">2 Safety instruction</p>
+    <div class="annot two"><span class="m red r2 l">WARNING:<i>WARNING = risk of injury. CAUTION = risk of damage.</i></span> <span class="m">Do not touch the brake unit until it is cool.<i>First: a clear, simple command</i></span> <span class="m rt">Hot parts can cause injury.<i>Then: the risk</i></span></div>
+
+    <p class="sub">3 Descriptive sentence</p>
+    <div class="row">
+      <div class="annot">The pump <span class="m">supplies<i>Simple present tense</i></span> fuel to the engine when the switch is on.</div>
+      <span class="cap nowrap" style="padding-bottom:32px">12 words, limit 25</span>
+    </div>
+    <p class="note right">Max 6 sentences per paragraph, one topic per paragraph</p>
+  </section>
+
+  <section class="panel" style="--span:3" data-title="Verb forms" data-cap="Section 3">
+    <table class="spec">
+      <tr><th>Form</th><th>Example</th><th>Status</th></tr>
+      <tr><td>Command (imperative)</td><td class="m">Close the valve.</td><td><span class="ok">Approved</span></td></tr>
+      <tr><td>Simple present</td><td class="m">The valve closes.</td><td><span class="ok">Approved</span></td></tr>
+      <tr><td>Simple past</td><td class="m">The valve closed.</td><td><span class="ok">Approved</span></td></tr>
+      <tr><td>Simple future</td><td class="m">The valve will close.</td><td><span class="ok">Approved</span></td></tr>
+      <tr><td>Infinitive</td><td class="m">Turn the knob to close it.</td><td><span class="ok">Approved</span></td></tr>
+      <tr><td>Past participle (as adjective)</td><td class="m">The closed valve</td><td><span class="ok">Approved</span></td></tr>
+      <tr><td>Progressive (-ing)</td><td class="m">The valve is closing.</td><td><span class="no">Not approved</span></td></tr>
+      <tr><td>Perfect</td><td class="m">The valve has closed.</td><td><span class="no">Not approved</span></td></tr>
+      <tr><td>Passive, in procedures</td><td class="m">The valve must be closed.</td><td><span class="no">Not approved</span></td></tr>
+    </table>
+    <p class="note">Use the -ing form only inside a technical name, for example "landing gear". Descriptive text can use the passive only when it is necessary.</p>
+  </section>
+
+  <section class="panel" style="--span:6" data-title="Dictionary entries" data-cap="Part 2 format">
+    <table class="spec">
+      <tr><th>Word (part of speech)</th><th>Status</th><th>Meaning or alternative</th><th>Approved example</th><th>Not approved</th></tr>
+      <tr><td class="m">CLOSE (v)</td><td><span class="ok">Approved</span></td><td>To move together; to stop flow</td><td>CLOSE the valve.</td><td class="muted">–</td></tr>
+      <tr><td class="m">close (adj)</td><td><span class="no">Not approved</span></td><td class="blue">NEAR</td><td>Put the tool NEAR the panel.</td><td class="red">Put the tool close to the panel.</td></tr>
+      <tr><td class="m">commence (v)</td><td><span class="no">Not approved</span></td><td class="blue">START</td><td>START the pump.</td><td class="red">Commence pumping.</td></tr>
+      <tr><td class="m">ensure (v)</td><td><span class="no">Not approved</span></td><td class="blue">MAKE SURE</td><td>MAKE SURE THAT the switch is off.</td><td class="red">Ensure the switch is off.</td></tr>
+      <tr><td class="m">prior to (prep)</td><td><span class="no">Not approved</span></td><td class="blue">BEFORE</td><td>BEFORE you start the engine.</td><td class="red">Prior to starting the engine.</td></tr>
+      <tr><td class="m">replenish (v)</td><td><span class="no">Not approved</span></td><td class="blue">FILL</td><td>FILL the reservoir.</td><td class="red">Replenish the reservoir.</td></tr>
+      <tr><td class="m">utilize (v)</td><td><span class="no">Not approved</span></td><td class="blue">USE</td><td>USE a torque wrench.</td><td class="red">Utilize a torque wrench.</td></tr>
+      <tr><td class="m">approximately (adv)</td><td><span class="no">Not approved</span></td><td class="blue">ABOUT</td><td>Wait for ABOUT 10 minutes.</td><td class="red">Wait approximately 10 minutes.</td></tr>
+      <tr><td class="m">TEST (v)</td><td><span class="ok">Approved</span></td><td>To find if it operates correctly</td><td>TEST the circuit.</td><td class="muted">–</td></tr>
+      <tr><td class="m">in order to</td><td><span class="no">Not approved</span></td><td class="blue">TO</td><td>Remove the panel TO get access.</td><td class="red">Remove the panel in order to access.</td></tr>
+    </table>
+    <p class="note">Convention: approved words are shown in UPPERCASE, unapproved words in lowercase. An approved word keeps only its listed meaning and part of speech. "Close" is a verb only, never an adjective meaning "near".</p>
+  </section>
+
+  <section class="panel" style="--span:3" data-title="Writing rule limits" data-cap="maximum values">
+    <div class="gauge" data-label="Procedural sentence" data-value="20" data-max="30" data-step="5" data-cap="max 20 words"></div>
+    <div class="gauge" data-label="Descriptive sentence" data-value="25" data-max="30" data-step="5" data-cap="max 25 words"></div>
+    <div class="gauge" data-label="Descriptive paragraph" data-value="6" data-max="10" data-step="1" data-cap="max 6 sentences"></div>
+    <div class="gauge" data-label="Noun cluster" data-value="3" data-max="5" data-step="1" data-cap="max 3 words"></div>
+    <div class="gauge" data-label="Instructions in each sentence" data-value="1" data-max="3" data-step="1" data-sub="(except simultaneous actions)" data-cap="max 1"></div>
+    <ul class="list">
+      <li>Use the same word for the same thing every time.</li>
+      <li>Do not leave out words like "the", "a" and "this".</li>
+      <li>Use the active voice in procedures.</li>
+      <li>Use vertical lists for complex text.</li>
+      <li>Write one topic in each paragraph.</li>
+    </ul>
+  </section>
+
+  <div class="stack" style="--span:3">
+    <section class="panel" data-title="History">
+      <div class="timeline">
+        <div class="ev"><b>1979</b><small>AECMA starts work on controlled English for airlines</small></div>
+        <div class="ev"><b>1986</b><small>First AECMA Simplified English Guide published</small></div>
+        <div class="ev"><b>2005</b><small>Becomes ASD-STE100 after AECMA joins ASD in 2004</small></div>
+        <div class="ev"><b>Now</b><small>Free download, revised by the ASD STEMG</small></div>
+      </div>
+      <p class="note">STEMG: Simplified Technical English Maintenance Group</p>
+    </section>
+    <div class="titleblock">
+      <div class="wide"><label>Title</label><span>Simplified Technical English: overview</span></div>
+      <div><label>Specification</label><span>ASD-STE100</span></div>
+      <div><label>Owner</label><span>ASD</span></div>
+      <div><label>Original domain</label><span>Aircraft maintenance</span></div>
+      <div><label>Now also used in</label><span>Defence, rail, industry</span></div>
+      <div><label>Source</label><span>asd-ste100.org</span></div>
+      <div><label>Sheet</label><span>1 of 1</span></div>
+    </div>
+  </div>
+
+</main>
